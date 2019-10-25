@@ -20,6 +20,7 @@ class ArticlesController < ApplicationController
   end
 
   def edit
+    binding.pry
     @article = Article.find(params[:id])
   end
 
