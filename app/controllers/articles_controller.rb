@@ -1,5 +1,3 @@
-require 'pry'
-
 class ArticlesController < ApplicationController
   def index
     @articles = Article.all
@@ -22,7 +20,6 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    binding.pry
     @article = Article.find(params[:id])
   end
 
